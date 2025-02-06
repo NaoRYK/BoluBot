@@ -80,6 +80,7 @@ return await flowDynamic(` Perfecto `)
     // Verifica si el usuario quiere terminar la conversación
     if (userInput.includes("chau")) {
         await flowDynamic("¡Chau, bestia! Nos vemos cuando quieras.");
+        // eslint-disable-next-line builderbot/func-prefix-endflow-flowdynamic
         return endFlow(); // Termina el flujo
     }
 
